@@ -1,0 +1,90 @@
+
+
+.outer-wrapper {
+  width: 100%;
+ 
+}
+
+.s-wrap {
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 55%;
+  position: relative;
+ 
+  background-color: #efefe8;
+  
+  overflow: hidden;
+}
+.s-wrap > input {
+  display: none;
+}
+.s-wrap .s-content {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  font-size: 0;
+  list-style: none;
+  transition: transform 1s;
+}
+.s-wrap .s-item {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.s-wrap .s-item-1 {
+  background-image: url("https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+}
+.s-wrap .s-item-2 {
+  background-image: url("https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80");
+}
+.s-wrap .s-item-3 {
+  background-image: url("https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80");
+}
+.s-wrap .s-item-4 {
+  background-image: url("https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80");
+}
+.s-wrap .s-item-5 {
+  background-image: url("https://images.unsplash.com/flagged/photo-1574342961579-cd8411b26ba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=659&q=80");
+}
+
+
+
+.s-type-2 .s-content {
+  animation: slider-animation 50s ease-in-out infinite;
+}
+.s-type-2 .s-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slider-animation {
+  0%, 7% {
+    transform: translateX(0%);
+  }
+  12.5%, 19.5% {
+    transform: translateX(-20%);
+  }
+  25%, 32% {
+    transform: translateX(-40%);
+  }
+  37.5%, 44.5% {
+    transform: translateX(-60%);
+  }
+  50%, 57% {
+    transform: translateX(-80%);
+  }
+  62.5%, 69.5% {
+    transform: translateX(-60%);
+  }
+  75%, 82% {
+    transform: translateX(-40%);
+  }
+  87.5%, 94.5% {
+    transform: translateX(-20%);
+  }
+}
