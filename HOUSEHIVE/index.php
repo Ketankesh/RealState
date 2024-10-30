@@ -8,8 +8,8 @@ include "connect.php";
 
 
 //database create
-//$c="create database if not exists Realstate";
-//$res=mysqli_query($con,$c);
+$c="create database if not exists Realstate";
+$res=mysqli_query($con,$c);
 
 
 //create table
